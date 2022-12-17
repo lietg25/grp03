@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>login</title>
+   <script type="text/javascript">
+      function lettersOnly(input){
+      var regex = /[^a-zA-Z0-9@.]/gi;
+      input.value = input.value.replace(regex,"");
+  }
+  </script>
+   <script type="text/javascript">
+      function lettersOnlys(input){
+      var regex = /[^a-zA-Z0-9]/gi;
+      input.value = input.value.replace(regex,"");
+  }
+  </script>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="petshop.css">
+
+</head>
+<body>
+<video autoplay loop muted plays-inline class="video">
+        <source src="lesliebg.mp4" type="video/mp4"> 
+    </video>
+
+ 
+   <section class="form-container">
+
+<form action="index.html" class="form-sign-in">
+<fieldset style = "width:75rem; margin:auto; background-color:#a1c298; padding: 0 10px 10px; border: 2px solid #666; border-radius: 4rem; box-shadow: 0 0 10px #666; padding-top: 10px;">
+<table margin = "">
+<tr>
+<td>
+<img src="https://64.media.tumblr.com/ebae62d84c1bb08273ea24f0c91c0800/tumblr_n25yl7nJPg1qji3sdo1_640.jpg" width = "300" height = "270">
+</td>
+<td>
+<table>	
+
+   <h3>Sign In now</h3>
+   <input type="email" name="email" class="box" placeholder="enter your email" required style = "width:70%" onkeyup="lettersOnly(this)">
+   <input type="password" name="pass" class="box" placeholder="enter your password" required style = "width:70%" onkeyup="lettersOnlys(this)">
+   <input type="submit" class="btn" name="submit" value="Sign In now">
+   <p>don't have an account? <a href="register.html">Sign Up now</a></p>
+</form>
+
+</section>
+
+</body>
+</html>

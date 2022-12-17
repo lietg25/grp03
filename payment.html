@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    <link rel="stylesheet" href="petshop.css">
+    <script type="text/javascript">
+        function lettersOnly(input){
+        var regex = /[^a-z]/gi;
+        input.value = input.value.replace(regex,"");
+    }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function () {
+             $('#txtUserNamegg').keypress(function (key) {              
+    
+                  var regexprn = new RegExp("^[0-9]+$-");
+                  var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                  if (!regexprn.test(key)) {
+                        event.preventDefault();
+                        $('#lblMsg').css('display', 'block');
+                        return false;
+                   }
+                  else {
+                        $('#lblMsg').css('display', 'none');
+                   }
+                })
+            });
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function () {
+             $('#txtUserNameaa').keypress(function (key) {              
+    
+                  var regexprn = new RegExp("^[a-zA-Z0-9]+$");
+                  var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                  if (!regexprn.test(key)) {
+                        event.preventDefault();
+                        $('#lblMsg').css('display', 'block');
+                        return false;
+                   }
+                  else {
+                        $('#lblMsg').css('display', 'none');
+                   }
+                })
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+               $('#txtUserNamerr').keypress(function (key) {              
+      
+                    var regexprn = new RegExp("^[a-zA-Z]+$");
+                    var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                    if (!regexprn.test(key)) {
+                          event.preventDefault();
+                          $('#lblMsg').css('display', 'block');
+                          return false;
+                     }
+                    else {
+                          $('#lblMsg').css('display', 'none');
+                     }
+                  })
+              });
+          </script>
+           <script type="text/javascript">
+            $(document).ready(function () {
+               $('#txtUserNameuu').keypress(function (key) {              
+      
+                    var regexprn = new RegExp("^[a-zA-Z0-9]+$");
+                    var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                    if (!regexprn.test(key)) {
+                          event.preventDefault();
+                          $('#lblMsg').css('display', 'block');
+                          return false;
+                     }
+                    else {
+                          $('#lblMsg').css('display', 'none');
+                     }
+                  })
+              });
+          </script>
+</head>
+<body>
+
+
+
+<div class="container22">
+ 
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type = "email" name = "emailr" id = "txtUserNamegg"  placeholder="juanDC@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>First Name *:</span>
+                    <input type="text" name="name" placeholder="Your First Name" style = "width:97%" onkeyup="lettersOnly(this)" >
+                </div>
+                <div class="inputBox">
+                    <span>Last Name *:</span>
+                    <input type="text" name="name" placeholder="Your Last Name" style = "width:97%" onkeyup="lettersOnly(this)" >
+                </div>
+              
+                <div class="inputBox">
+                    <span> Street Address * :</span>
+                    <input type="text" placeholder="no. - street - city" id = "txtUserNameaa" >
+                </div>
+                
+                <div class="inputBox">
+                    
+                    <div class="inputBox">
+                        <span>city :</span>
+                       
+                        <select name="Citys" placeholder=" Valenzuela">
+                        <option value="Bulacan">Caloocan</option>
+                        <option value="Malabon">Malabon</option>
+                        <option value="Navotas">Navotas</option>
+                        <option value="Valenzuela">Valenzuela</option>
+                        <option value="Manila">Manila</option>
+                         <option value="Bulacan">Bulacan</option>
+                <option value="Pasig">Pasig</option>
+                <option value="Taguig">Taguig</option>
+                <option value="Quezon">Quezon</option>
+                <option value="Meycauayan">Meycauayan</option>
+                <option value="Bocaue">Bocaue</option>
+                <option value="Malolos">Malolos</option>
+                <option value="Marilao">Marilao</option>
+                <option value="San Juan">San Juan</option>
+    
+                    
+                </div>
+
+                <div class="flex">
+                    
+                    <div class="inputBox">
+                        <span>Postal Code * :</span>
+                        <input type = "number" name = "number" min="0" id = "txtUserNamegg" maxlength = "4" placeholder="3020">
+                    </div>
+                       <div class="inputBox">
+                        <span>Phone * :</span>
+                        <input type = "number" name = "number" min="0" id = "txtUserNamegg" maxlength = "11"  placeholder="+63">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Enter Payment Info</h3>
+
+                <div class="inputBox">
+                    <span>Cards Accepted :</span>
+                    <img src="image/ppp.png" width = "300" height = "800">
+                </div>
+               
+                <div class="inputBox">
+                    <span>Expiration Date * :</span>
+                    <input type = "number" name = "number" min="0" id = "txtUserNamegg" maxlength = "11"  placeholder="03-25-2022">
+                </div>
+                <div class="inputBox">
+                    <span>Name on Card * :</span>
+                    <input type="text" id = "txtUserNamerr" placeholder="mr/mrs. juan dela cruz">
+                </div>
+                <div class="inputBox">
+                    <span>Card Number * :</span>
+                    <input type = "number" name = "number" min="0" id = "txtUserNamegg" maxlength = "11"  placeholder="5555-5555-5555-5555">
+                </div>
+                <div class="flex">
+                  <div class="inputBox">
+                    <span>Security Code * :</span>
+                    <input type = "password" placeholder = " Your Password" name = "password" id = "password">
+                </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type = "number" name = "number" id = "txtUserNameuu" placeholder="5555">
+
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+      <center><a href = "mains.html" class="Previous">Proceed to Receipt</a></center>    
+        <input type="checkbox" checked ="checked">Create an Etix account with my email address <br>
+        <input type="checkbox" checked ="checked">I have read and agree to the Terms of Use, Purchase Policy, & Privacy
+        <br>
+      <br>
+        <center><a href = "index.html" class="Previous">&laquo;Previous</a></center>
+       
+
+                           
+</body>
+</html>

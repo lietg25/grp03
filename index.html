@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>AniMall PetShop</title>
+  
+    <script type="text/javascript">
+      function lettersOnly(input){
+      var regex = /[^a-z]/gi;
+      input.value = input.value.replace(regex,"");
+  }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+        $(document).ready(function () {
+           $('#txtUserName').keypress(function (key) {              
+  
+                var regexprn = new RegExp("^[a-zA-Z0-9@.]+$");
+                var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                if (!regexprn.test(key)) {
+                      event.preventDefault();
+                      $('#lblMsg').css('display', 'block');
+                      return false;
+                 }
+                else {
+                      $('#lblMsg').css('display', 'none');
+                 }
+              })
+          });
+      </script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script type="text/javascript">
+             $(document).ready(function () {
+                $('#txtUserNameaa').keypress(function (key) {              
+       
+                     var regexprn = new RegExp("^[a-zA-Z]+$");
+                     var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                     if (!regexprn.test(key)) {
+                           event.preventDefault();
+                           $('#lblMsg').css('display', 'block');
+                           return false;
+                      }
+                     else {
+                           $('#lblMsg').css('display', 'none');
+                      }
+                   })
+               });
+           </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+ <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+ integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="petshop.css">
+     
+    <link rel = "icon" href = 
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+        type = "image/x-icon">
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<div class="background_color"></div>
+<header class="navigation">
+    <div class="main_navigation">
+        <a href="index.html" id="title"><i class="fas fa-paw"></i>AniMall<span id="peace">PetShop</span></a>
+        <div class="navigation_container">
+    <ul>
+        <li class="list">
+            <a href="#home">
+                <span class="logo"><i class="fa-solid fa-house" id="logo"></i></span>
+                <span class="title" id="home">Home</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#about">
+                <span class="logo"><i class="fa-solid fa-book-open" id="logo"></i></span>
+                <span class="title">About</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#shop">
+                <span class="logo"><i class="fa-solid fa-message" id="logo"></i></span>
+                <span class="title">Shop</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#services">
+                <span class="logo"><i class="fa-solid fa-gears" id="logo"></i></span>
+                <span class="title">Services</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#gallery">
+                <span class="logo"><i class="fa-solid fa-circle-user" id="logo"></i></span>
+                <span class="title">Gallery</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#contact">
+                <span class="logo"><i class="fa-solid fa-users" id="logo"></i></span>
+                <span class="title" id="Contact">Contact</span>
+            </a>
+        </li>
+    </ul>
+    </div>
+    <div class="font_logo">
+        <ul>
+            <li><a href="login.html"><i class="fas fa-user">Lie</i></a></li>
+            <li><a href="check.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="payment.html"><i class="fa fa-credit-card"></i></a></li>
+        </ul>
+    </div>
+</div>
+</header>
+<!-- home section starts  -->
+     <div class="icons">
+        <div id="menu-btn"></div>
+        <div id="search-btn"></div>
+        
+    </div>
+    
+
+</header>
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box" style="background:url(image/dfdf.webp) no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <h3>We care for them as you do</h3>
+                    <p>A dog has a strong power of smell. They are more liked by people because of their faithfulness. They are intelligent, they are watchfulness. The dogs have many colors such as grey, white, black, brown and red. They are of many kinds such as bloodhound, greyhound, german shepherd, Labrador, Rottweiler, bulldog poodle, etc.</p>
+                    <div class="button">
+                        <a href="aso2.html" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box" style="background:url(image/catss.png) no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <h3>Cats are connoisseurs of comfort</h3>
+                    <p>Cats have keen vision; they can see much more detail than dogs. Concentrated in the center of the retina of the eye, a specific type of cell called a cone gives cats excellent visual acuity and binocular vision. This allows them to judge speed and distance very well, an ability that helped them survive as hunters. However, although the cone cells are also responsible for color vision, it is uncertain whether cats can see colors.</p>
+                    <div class="button">
+                        <a href="cats.html" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box" style="background:url(image/fis.jpg) no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <h3>A good trap will catch you fish for days</h3>
+                    <p>To breathe underwater, fish have developed special organs called gills. The gills, found on the side of the fish just behind the head, contain thousands of capillaries, or tiny blood vessels. Water is constantly pumped over the gills, which filter the oxygen out of the water and directly into the fish’s blood. A gill cover, the operculum, is a flexible bony plate that helps protect the sensitive gills. Gills are also important for excretion of waste products, particularly ammonia, from the fish’s bloodstream.</p>
+                    <div class="button">
+                        <a href="pishda.html" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box" style="background:url(image/bir.jpg) no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <h3>The bluebird carries the sky on his back</h3>
+                    <p>A bird is an animal with wings, feathers, and two legs. Birds, from chickens to crows, are also warm-blooded and lay eggs. Most birds can fly using their wings, and when you visit the coast you'll see various sea birds like gulls, terns, and cormorants. bird, (class Aves), any of the more than 10,400 living species unique in having feathers, the major characteristic that distinguishes them from all other animals.</p>
+                    <div class="button">
+                        <a href="birds.html" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box" style="background:url(image/Rabbits.jpg) no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <h3>Just don’t carrot all</h3>
+                    <p>Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs. They have 2 pairs of sharp incisors (front teeth), one pair on top and one pair on the bottom. They also have 2 peg teeth behind the top incisors.Any small, bounding, gnawing mammal of the family Leporidae. Rabbits have long ears, a short tail, long hind legs, and continuously growing incisors. Most species are gray or brown and range in size from 10 to 18 in.</p>
+                    <div class="button">
+                        <a href="rabbit.html" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- category section starts  -->
+
+<section class="category" id="category" >
+
+    <h1 class="heading"> <i class="fas fa-paw"></i> shop by category <i class="fas fa-paw"></i> </h1>
+
+    <div class="box-container" >
+        
+        <div class="box" data-aos="fade-right">
+            <img src="image/dog.jpg" >
+            <h3>Dogs</h3>
+            <a href="aso2.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <img src="image/cat.jpg" >
+            <h3>Cats</h3>
+            <a href="cats.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="image/fish11.webp">
+            <h3>Fish</h3>
+            <a href="pishda.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <img src="image/bird.jpg" >
+            <h3>Birds</h3>
+            <a href="birds.html" class="btn">shop now</a>
+        </div>
+        <div class="box" data-aos="fade-left">
+            <img src="image/rabbit.jpg">
+            <h3>Rabbits</h3>
+            <a href="rabbit.html" class="btn">shop now</a>
+        </div>
+ 
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+
+
+    <div class="row">
+
+        <div class="video-container" data-aos="fade-right">
+            <img src="image/dogfood.jpg">
+            <h3>All about us and our Team</h3>
+        </div>
+
+        <div class="content" data-aos="fade-left">
+           <h3>premium <span>pet food</span> manufacturer</h3>
+        <p>Located in CaMaNaVa Area., (Caloocan, Malabon, Navotas, Valenzuela) Petshop.ph is your one-stop-shop for your soon to be pet companion and pet care needs. Ranging from a wide variety of pet foods and treats all the way to pet accessories and pet grooming. </p>
+        <br>
+        <p> From our physical store to our online e-store (AniMall Pet Hotel & Shop), we take pride in the exclusive collections that top-tier pet products bring to the market and the incomparable customer service we provide to our clients every day. Shopping for all your pet care needs made easy with just a few clicks!</p>
+            <a href="about.html" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- products section start -->
+<section class="products" id="products" >
+
+    <h1 class="heading"> <i class="fas fa-paw"></i>  Recommended <span> Products </span> <i class="fas fa-paw"></i> </h1>
+
+    <div class="box-container" data-aos="fade-down">
+
+        <div class="box">
+            <img src="image/coach.webp" >
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Calming Bed® for Dogs and Cats</h3>
+                <div class="price"> P1,640.00 <span>P1,800.00</span> </div>
+                <a href="aso2.html" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/birdcage.webp" >
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Bird Cage</h3>
+                <div class="price"> P460.00 <span>P550.00</span> </div>
+                <a href="birds.html" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/bundle.webp" >
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Fresh Breath Combo Pack</h3>
+                <div class="price"> P515.00 <span>P750.00</span> </div>
+                <a href="aso2.html" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/bowls.webp" >
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Stainless Bowl for Pet</h3>
+                <div class="price"> P188.00 <span>P250.00</span> </div>
+                <a href="aso2.html" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/catli.webp">
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Cat litter Box</h3>
+                <div class="price"> P380.00 <span>P450.00</span> </div>
+                <a href="cats.html" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/cages.webp" >
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Collapsible Cage</h3>
+                <div class="price"> P1,030.00 <span>P1,250.00</span> </div>
+                <a href="birds.html" class="btn">see more</a>
+            </div>
+        </div>
+<div class="box">
+            <img src="image/colar.webp" >
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Pet Collar with Bell</h3>
+               <div class="price"> P88.00 <span>P100.00</span> </div>
+                <a href="aso2.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/toy.jpg" >
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Amy Carol Interactive Flying Bird Teaser Cat Toy</h3>
+                 <div class="price"> P205.00 <span>P215.00</span> </div>
+                <a href="birds.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/aquarium.jpg" >
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Big Fish tank Aquarium</h3>
+                <div class="price"> P1,560.00 <span>P2,050.00</span> </div>
+                <a href="pishda.html" class="btn">see more</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- products section ends -->
+
+<!-- products1 section starts  -->
+
+<section class="products1" id="shop">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="swiper products-slider" data-aos="zoom-in">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/dry1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Wet Dog food</h3>
+                    <p>PEDIGREE® HIGH PROTEIN Wet Dog Food Pouches, Beef and Pork Tenderloin Flavor Cuts in Gravy</p>
+                    <div class="price"> P135.00<span>P155.00 </span> </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/treat.jpg" >
+                </div>
+                <div class="content">
+                    <h3>Treat Dog food</h3>
+                <p>PEDIGREE® DENTASTIX™ CHEWY CHUNX™ Dental Treats, Small/Medium Dog</p>
+                 <div class="price"> P95.00 <span> P120.00 </span> </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/dry3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Dry Cat food</h3>
+                <p>Balanced and complete feed for cats - Specially for neutered kittens (from 6 to 12 months old).</p>
+                <div class="price">  P200.00 <span> P230.00 </span> </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/wet1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Wet Cat food</h3>
+                    <p>Complete feed for cats - Specially for adult Maine Coon cats - Over 15 months old (thin slices in gravy).</p>
+                    <div class="price">  P215.00 <span> P250.00 </span> </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/treat1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Treat Cat food</h3>
+                <p>Original Feline Treats are intended for adult cats and are scientifically formulated for use during a specific veterinary dietary management program.  </p>
+                <div class="price">  P85.00 <span> P130.00 </span> </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/frozen.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Fish Frozen Food</h3>
+                    <p>Hikari® Bio-Pure® Brine Shrimp  </p>
+                     <div class="price">  P70.00 <span> P110.00 </span> </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/dryfoods.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Fish Dry Food</h3>
+                <p>New Life Spectrum Probiotix Fish Food Medium Pellet</p>
+                 <div class="price">  P200.00 <span> P230.00 </span> </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/fishfond.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Fish Fond Food</h3>
+                    <p>Drs. Foster & Smith Goldfish & Pond Flakes for Goldfish, Koi, & Pond Fish</p>
+                    <div class="price">  P180.00 <span> P210.00 </span> </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/birdfood.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>Wild Bird Food</h3>
+                    <p>Kaytee Wild Bird Food Basic Blend is a proven favorite that attracts a wide variety of outdoor birds. </p>
+                     <div class="price">  P150.00 <span> P200.00 </span> </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/seed.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>Parakeet Seed </h3>
+                <p>One quart (2lb) of parakeed seed. Sealed for freshness. Only the best ingredients for your bird. </p>
+                 <div class="price">  P90.00 <span> P150.00 </span> </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="check.html" class="fas fa-shopping-cart"></a>
+                </div>
+                <div class="image">
+                    <img src="image/flavor.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>ZuPreem Bird Food </h3>
+                    <p>Provides healthy and delicious nutrition for everyday feeding for Conures, medium to large parrots that prefer this pellet size. </p>
+                     <div class="price">  P180.00 <span> P250.00 </span> </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+            <div class="icons">
+                <a href="check.html" class="fas fa-shopping-cart"></a>
+            </div>
+            <div class="image">
+                <img src="image/rabbit food4.webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Hay Bale for Rabbits</h3>
+                <p>Provides healthy and delicious nutrition for everyday feeding for Conures, medium to large parrots that prefer this pellet size. </p>
+                <div class="price"> P765.00 <span> P850.00 </span> </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="check.html" class="fas fa-shopping-cart"></a>
+            </div>
+            <div class="image">
+                <img src="image/rabbit food5.webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Hay Plus with Carrot</h3>
+                <p>Provides healthy and delicious nutrition for everyday feeding for Conures, medium to large parrots that prefer this pellet size. </p>
+                <div class="price">  P553.50 <span> P615.00 </span> </div>
+                
+                
+            </div>
+        </div>
+        <div class="swiper-slide box">
+            <div class="icons">
+                <a href="check.html" class="fas fa-shopping-cart"></a>
+            </div>
+            <div class="image">
+                <img src="image/rabbit food3.webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Natural Rabbit Food</h3>
+                Provides healthy and delicious nutrition for everyday feeding for Conures, </p>
+                <div class="price"> P405.00 <span>P450.00 </span> </div>
+            </div>
+        </div>
+            </div>
+
+            </div>
+
+</section>
+
+<!-- products1 section ends -->
+
+
+<!-- services section start -->
+<div id="services">
+    <div class="service">
+        <p>Our<span>Services</span></p>
+        <div class="box_containers">
+
+        <div class="boxes" id="box1">
+            <img src="image/boarding.jpg" width="250" height="50" class="box1_image" id="box1_image">
+           
+            <p id="boxtitle" class="boxtitle1">dog boarding</p>
+            <p id="boxcontent">We can look after your dogs and cats. We offer day boarding for your pets.</p>
+         
+        </div>
+        <div class="boxes" id="box2">
+            <img src="image/cats.jpg" width="250" height="50" class="box1_image" id="box2_image">
+            <p id="boxtitle" class="boxtitle2">cat boarding </p>
+            <p id="boxcontent">cat boarding only accepts cat boarders.</p>
+         
+        </div>
+        <div class="boxes" id="box3">
+            <img src="image/spa.jpg" width="250" height="50" class="box1_image" id="box3_image">
+            <p id="boxtitle" class="boxtitle3">Spa Grooming</p>
+            <p id="boxcontent">Let Pet Express take care of your pet’s grooming needs. </p>
+            
+        </div>
+        <div class="boxes" id="box4">
+            <img src="image/meal.jpg" width="250" height="50" class="box1_image" id="box4_image">
+            <p id="boxtitle" class="boxtitle4">healthy meal</p>
+            <p id="boxcontent">ere are the benefits of the necessary nutrients and why it’s essential your pup has adequate amounts of each</p>
+           
+        </div>
+        <div class="boxes" id="box5">
+            <img src="image/health.jpg" width="250" height="50" class="box1_image" id="box5_image">
+            <p id="boxtitle" class="boxtitle5">Health Care</p>
+            <p id="boxcontent">Wellness consultations and examinations Comprehensive physical examinations</p>
+            
+        </div>
+        <div class="boxes" id="box6">
+            <img src="image/activity.jpg" width="250" height="50" class="box1_image" id="box6_image">
+            <p id="boxtitle" class="boxtitle6">Activity exercise</p>
+            <p id="boxcontent">There are many activities you can do with your dog while exercising at the same time. </p>
+        
+        </div>
+
+        </div>
+    </div>
+</div>
+<!-- services section ends -->
+
+<!-- plan section starts  -->
+
+<section class="plan" id="Services">
+
+    <h1 class="heading1"> choose a <span>plan</span> </h1>
+
+    <div class="box-containerss" data-aos="fade-up">
+
+        <div class="boxss">
+            <h3 class="titles">pet care</h3>
+            <h3 class="day"> Basic </h3>         
+            <div class="list">
+                <p> pet room <span class="fa fa-check-circle"></span> </p>
+                <p> pet grooming <span class="fa fa-check-circle"></span> </p>
+                <p> pet exercise <span class="fa fa-check-circle"></span> </p>
+                <p> pet meals <span class="fa fa-check-circle"></span> </p>
+            </div>
+            <div class="amount"><span>P</span>150/weeks</div>
+            <a href="payment.html" class="btn"> choose plan </a>
+        </div>
+
+        <div class="boxss">
+            <h3 class="titles">pet care</h3>
+            <h3 class="day"> advanced </h3>         
+            <div class="list">
+                <p> pet room <span class="fa fa-check-circle"></span> </p>
+                <p> pet grooming <span class="fa fa-check-circle"></span> </p>
+                <p> pet exercise <span class="fa fa-check-circle"></span> </p>
+                <p> pet meals <span class="fa fa-check-circle"></span> </p>
+            </div>
+            <div class="amount"><span>P</span>550/month</div>
+            <a href="payment.html" class="btn"> choose plan </a>
+        </div>
+
+        <div class="boxss">
+            <h3 class="titles">pet care</h3>
+            <h3 class="day"> Permanent </h3>       
+            <div class="list">
+                <p> pet room <span class="fa fa-check-circle"></span> </p>
+                <p> pet grooming <span class="fa fa-check-circle"></span> </p>
+                <p> pet exercise <span class="fa fa-check-circle"></span> </p>
+                <p> pet meals <span class="fa fa-check-circle"></span> </p>
+            </div>
+            <div class="amount"><span>p</span>1050/year</div>
+            <a href="payment.html" class="btn"> choose plan </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- plan section ends -->
+
+ <!-- gallery section starts  -->
+
+ <section class="gallery" id="gallery">
+
+    <h1 class="heading"> AniMall <span>Gallery</span> </h1>
+   
+      <div class="box-container container" data-aos="fade-down">
+   
+         <div class="box">
+            <img src="image/shihtzu.jpg">
+            <div class="content">
+               <h3>Dog Breed: Shih Tzu</h3>
+               <p>Princess type Shih Tzu is a term that pet shops use to sell their teacups and Imperial Shih Tzus. There's no such thing as Princess type. It's just a term that pet shops use to sell their teacups and Imperial Shih Tzus. </p>
+               <a href="#" class="link-btn">Female P20k -</a>
+               <a href="#" class="link-btn"> Male P15k </a>
+             
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/husky.jpg" >
+            <div class="content">
+                <h3>Dog Breed: Siberian Husky</h3>
+               <p>The Siberian Husky is a medium-sized working sled dog breed. The breed belongs to the Spitz genetic family. It is recognizable by its thickly furred double coat, and is smaller than the similar-looking Alaskan Malamute.</p>
+               <a href="#" class="link-btn">Female P60k -</a>
+               <a href="#" class="link-btn"> Male P55k </a>
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/pomerian.jpg" >
+            <div class="content">
+                <h3>Dog Breed: Pomerian</h3>
+               <p>Pomeranians are easily recognized by their luxuriant fluffy double coat and foxy face with alert, prick ears. The body shape is fairly square, and the fluffy tail curls up and over the back. </p>
+               <a href="#" class="link-btn">Female P30k -</a>
+               <a href="#" class="link-btn"> Male P28k </a>
+            </div>
+         </div>
+   
+   <div class="box">
+            <img src="image/abyss.png">
+            <div class="content">
+               <h3> Breed: Abyssinian</h3>
+               <p>The Abyssinian is a breed of domestic short-haired cat with a distinctive "ticked" tabby coat, in which individual hairs are banded with different colors. </p>
+               <a href="#" class="link-btn"></a>
+               <a href="#" class="link-btn"> </a>
+             
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/maine.png">
+            <div class="content">
+               <h3> Breed: Maine Coon</h3>
+               <p>The Maine Coon is a large domesticated cat breed. It is one of the oldest natural breeds in North America. </p>
+               <a href="#" class="link-btn"></a>
+               <a href="#" class="link-btn">  </a>
+             
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/balli.png">
+            <div class="content">
+               <h3> Breed: Balinese</h3>
+               <p>The Balinese is a long-haired breed of domestic cat with Siamese-style point coloration and sapphire-blue eyes. </p>
+               <a href="#" class="link-btn"></a>
+               <a href="#" class="link-btn">  </a>
+             
+            </div>
+         </div>
+           <div class="box">
+            <img src="image/Betta.jpg">
+            <div class="content">
+               <h3>Betta Fish</h3>
+               <br>
+               <p>For ease of maintenance, bettas can’t be beat. Also known as Siamese fighting fish, bettas require separation from most other species, which means these brilliantly colored swimmers do well in small fish bowls. While keeping male bettas separate is imperative, some female bettas can live in tanks with other fish. Bettas are a cold-water species.</p>
+             
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/goldfish.webp" >
+            <div class="content">
+                <h3>Goldfish</h3>
+                <br>
+               <p>Another cold-water fish, goldfish belong to the carp family. Because they enjoy cool water temperatures, keep goldfish in a separate tank from warm water fish. Avoid keeping goldfish in a bowl, as they can grow quite long and need sufficient swimming room.</p>
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/Janitor Fish.jpg" >
+            <div class="content">
+                <h3>Janitor Fish</h3>
+                <br>
+               <p>The janitor fish, also known as the sailfin catfish, is an invasive species of catfish native to South America's Amazon River basin. This type of fish damages banks building nests, causing erosion, and competes with the local fish for food.</p>
+            </div>
+         </div>
+         <div class="box">
+            <img src="image/parakeet.jpg">
+            <div class="content">
+               <h3>Parakeet</h3>
+               <br>
+               <p>Parakeets are a species of parrot, known for their long tail feathers, vibrant coloring, and cheerful chatter. Although they can be fed seeds and variations of birdseed, a diet of seeds alone could cause a parrot more harm than good.</p>
+             
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/Cockatiel.webp" >
+            <div class="content">
+                <h3>Cockatiel</h3>
+                <br>
+               <p>The cockatiel is a small species of parrot that has become very popular as a companion pet. The cheerful, sociable, little whistlers will, with proper socialization, enjoy spending as much time as possible with its humans, positively thriving on the attention.</p>
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/parrot.webp" >
+            <div class="content">
+                <h3>Parrot</h3>
+                <br>
+               <p>Parrots can be found on all tropical and subtropical continents and regions including Africa, Australia, Oceania, South and Southeast Asia, Central and South America. Parrots eat a mixture of nuts and seeds, as well as flowers, nectar and fruit. Sometimes they also enjoy tucking into small insects.</p>
+            </div>
+         </div>
+         <div class="box">
+            <img src="image/mini rex.jpg">
+            <div class="content">
+               <h3>Mini Rex</h3>
+               <br>
+               <p>The Mini Rex rabbit is a fairly new type of rabbit. Its small size, low maintenance coat, and friendly personality have made them very popular pets. The Mini Rex comes in a rainbow of colors. As far as rabbit breeds go, the Mini Rex rabbit is robust and healthy. It’s also a popular show breed.</p>
+             
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/holland lop.jpg" >
+            <div class="content">
+                <h3>Holland Lop</h3>
+                <br>
+               <p>The Holland Lop rabbit is a small and compact breed of rabbit that weighs between 2 and 4 lbs. They have a wide and short body type that gives them a stocky look, along with their short, thick legs. They pose similarly to a cat, resting mostly on their hind legs and only slightly on their two front feet.</p>
+            </div>
+         </div>
+   
+         <div class="box">
+            <img src="image/mini satin.jpg" >
+            <div class="content">
+                <h3>Mini Satin</h3>
+                <br>
+               <p>The Mini Satin rabbit is the smaller version of the Standard Satin rabbit, created by breeding the Standard Satin with a Netherland Dwarf or Polish rabbit. These bunnies are a rare breed and are the latest rabbits to be recognized by the American Rabbit Breeders Association (ARBA).</p>
+            </div>
+         </div>
+   
+         
+   
+      </div>
+   
+   </section>
+   
+   <!-- gallery section ends -->
+   
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> Customers <span>Review</span> </h1>
+ 
+    <div class="box-container container" data-aos="zoom-in">
+ 
+       <div class="box">
+          <img src="image/kidss.png" >
+          <h3>@SeviCamero01</h3>
+          <p>Animall offers variety of quality products with a affordable price. The owner and staff are very accommodating. Their grooming services is highly recommended too! Exceptional service with great passion and talent.</p>
+          <div class="stars">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star-half-alt"></i>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <img src="image/mindset.jpeg" >
+          <h3>@LunaValeria</h3>
+          <p>Excellent quality of products. Very accommodating seller. Well packaged of items. The seller shipped the items immediately. I will order again. Happy to received it. God bless you more!!!!</p>
+          <div class="stars">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <img src="image/mimi.png" >
+          <h3>@bellaciao</h3>
+           <p>Good prompt service and arrived well before the date given. Glad to find they were not in huge amounts of packaging, despite the weight of the packs.
+ </p>
+          <div class="stars">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+       </div>
+ <div class="box">
+          <img src="image/carlo.png" >
+          <h3>@maxicortez</h3>
+           <p> I don’t even think about going anywhere else now as the quality products I want for my fur babies can be got here, or a close alternative if something is out of stock at a good price. I also can’t fault the communication, updates and fast delivery. Thank you Petshop.co.uk.
+ </p>
+          <div class="stars">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+       </div>
+    </div>
+ 
+ </section>
+ 
+ <!-- reviews section ends -->
+
+
+ <!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126865.93607102813!2d120.9595212703273!3d14.710336824904827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1b519841b5f%3A0x5e770e225042d1a!2sCaloocan%2C%20Metro%20Manila%2C%20Philippines!5e1!3m2!1sen!2sin!4v1670605206135!5m2!1sen!2sin" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="">
+            <h3 data-aos="zoom-in">tell us something!</h3>
+            <input data-aos="zoom-in" type="text" placeholder="your name" class="box" onkeyup="lettersOnly(this)" >
+            <input data-aos="zoom-in" type="email" placeholder="your email" class="box" id = "txtUserName">
+            <input data-aos="zoom-in" type="number" placeholder="your number" class="box">
+            <textarea data-aos="zoom-in" placeholder="your message" class="box" cols="30" rows="10" id = "txtUserNameaa"></textarea>
+            <input data-aos="zoom-in" type="submit" value="send message" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- icons section start -->
+<section class="icons-container" data-aos="fade-right">
+
+    <div class="icons">
+        <img src="image/icon-1.png">
+        <div class="info">
+            <h3>We Deliver Nationwide</h3>
+            <span>Shop Now!</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="image/icon-2.png" >
+        <div class="info">
+            <h3>10 days returns</h3>
+            <span>moneyback guarantee</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="image/icon-3.png" >
+        <div class="info">
+            <h3>Everyday Low Prices</h3>
+            <span>Enjoy our affordable prices</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="image/icon-4.png" >
+        <div class="info">
+            <h3>secure payments</h3>
+            <span>Visa, Gcash, thru COD</span>
+        </div>
+    </div>
+   
+</section>
+
+<!-- icons section ends -->
+
+   
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container" data-aos="zoom-in">
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p> monday : <i> 7:00am - 10:30pm </i> </p>
+            <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
+            <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
+            <p> friday : <i> 7:00am - 10:30pm </i> </p>
+            <p> saturday & sunday : <i> closed </i> </p>
+             
+        </div>
+
+         <div class="box">
+            <h3>locations</h3>
+            <a class="links"href="https://www.google.com/maps/d/edit?mid=1MeCh2P7ulgehV7Yp50SuWyG2BxM&ie=UTF8&oe=UTF8&msa=0">Caloocan City</a>
+            <a class="links"href="https://www.google.com/maps/d/viewer?mid=1boT_wydhljOUnbL2Hnw8TTsgcQY&hl=en_US">Malabon City</a>
+            <a class="links"href="https://www.google.com/mymaps/viewer?mid=1BE57xnsxCzEJiH60KsS8a9lcD2o&hl=en_US">Navotas City</a>
+            <a class="links"href="https://www.google.com/mymaps/viewer?mid=16ty1Cgad6kClWWP7TkIS8T4icPY&hl=en_US">Valenzuela City</a>
+         </div>
+        
+
+        <div class="box">
+            <h3>Contact Info's</h3>
+            <p> <i class="fas fa-phone"></i> +639-995-4685 </p>
+            <p> <i class="fas fa-phone"></i> +554-782-3663 </p>
+            <p> <i class="fas fa-envelope"></i> Petshopgrp03@gmail.com </p>
+            <p> <i class="fas fa-map"></i> Manila, Phil. - 30221 </p>
+           
+        </div>
+
+        <div class="box">
+            <div class="share">
+                <h3>Social Media</h3>
+                <p><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a> <a href="https://twitter.com/i/flow/login" class="fab fa-twitter"></a></p>
+
+                <p><a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram"></a></p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+        
+<div class="credit"> created by <span>Group#3</span> | all rights reserved! </div>
+
+<!-- footer section ends -->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file links  -->
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      delay:400,
+      duration:800
+  });
+</script>
+
+</body>
+</html>
